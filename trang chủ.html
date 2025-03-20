@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chu</title>
+    <link rel="stylesheet" href="trang chu.css">
+    <script defer src="trang chu.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <p>Bạn đã sở hữu sản phẩm của Tú shop chưa? <strong>ƯU ĐÃI ĐỘC QUYỀN - DUY NHẤT TRÊN WEB</strong></p>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-primary" href="./trang chủ.html">Tú <span class="text-dark">Shop</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="trang chủ.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sản phẩm.html">Sản phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog  yeu da.html">Blog Yêu Da</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/congdong.html">Cộng Đồng Celebeauty</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ctv.html">Trở thành CTV</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex me-3">
+                        <input class="form-control me-2" type="search" placeholder="Tìm kiếm..." aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                    <div class="d-flex align-items-center">
+                        <div class="dropdown me-3">
+                            <a class="btn btn-outline-dark dropdown-toggle" href="#" role="button" id="userMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-circle"></i> Tài khoản
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="userMenu">
+                                <li><a class="dropdown-item" href="./dang nhap dang ky/dangnhap.html">Đăng nhập</a></li>
+                                <li><a class="dropdown-item" href="./dang nhap dang ky/dangky.html">Đăng ký</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary position-relative" onclick="toggleCart()">
+                            <i class="bi bi-cart-fill"></i> Giỏ hàng
+                            <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav> 
+    <section>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./ảnh/modal 1.png" class="d-block w-100" alt="anh 1">
+              </div>
+              <div class="carousel-item">
+                <img src="./ảnh/modal 2.png" class="d-block w-100" alt="anh 2">
+              </div>
+              <div class="carousel-item">
+                <img src="./ảnh/modal 3.png" class="d-block w-100" alt="anh 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+</header>
+    <div class="deal-soc">💥 DEAL SỐC - MUA NGAY 💥</div>
+    <section class="product-list">
+        <div class="product">
+            <img src="ảnh/1.jpg" alt="Toner Cân Bằng Da">
+            <h3>Xịt Toner Cân Bằng Da GSC</h3>
+            <p>9 đánh giá ⭐ 4</p>
+            <p class="price">600.000₫</p>
+            <div class="buttons">
+                <button class="buy-now">Mua ngay</button>
+                <button class="add-to-cart" onclick="addToCart('Xịt Toner Cân Bằng Da GSC', 600000, 'ảnh/1.jpg')">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="ảnh/2.jpg" alt="Kem Dưỡng Trắng">
+            <h3>Kem dưỡng trắng GSC Speed Whitening</h3>
+            <p>0 đánh giá ⭐ 0</p>
+            <p class="price">1.200.000₫</p>
+            <div class="buttons">
+                <button class="buy-now">Mua ngay</button>
+                <button class="add-to-cart" onclick="addToCart('Xịt Toner Cân Bằng Da GSC', 600000, 'ảnh/1.jpg')">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="ảnh/3.jpg" alt="Ủ Trắng Toàn Thân">
+            <h3>Ủ trắng toàn thân GSC Body Whitening</h3>
+            <p>0 đánh giá ⭐ 0</p>
+            <p class="price">1.400.000₫</p>
+            <div class="buttons">
+                <button class="buy-now">Mua ngay</button>
+                <button class="add-to-cart" onclick="addToCart('Xịt Toner Cân Bằng Da GSC', 600000, 'ảnh/1.jpg')">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="ảnh/4.jpg" alt="Tẩy Da Chết Body">
+            <h3>Tẩy da chết Body GSC</h3>
+            <p>0 đánh giá ⭐ 0</p>
+            <p class="price">1.650.000₫</p>
+            <div class="buttons">
+                <button class="buy-now">Mua ngay</button>
+                <button class="add-to-cart" onclick="addToCart('Xịt Toner Cân Bằng Da GSC', 600000, 'ảnh/1.jpg')">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="ảnh/5.jpg" alt="Kem Phục Hồi Da">
+            <h3>Kem phục hồi làm dịu da GSC</h3>
+            <p>4 đánh giá ⭐ 4</p>
+            <p class="price">1.990.000₫</p>
+            <div class="buttons">
+                <button class="buy-now">Mua ngay</button>
+                <button class="add-to-cart" onclick="addToCart('Xịt Toner Cân Bằng Da GSC', 600000, 'ảnh/1.jpg')">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="ảnh/6.jpg" alt="Kem Phục Hồi Da">
+            <h3>Tẩy da chết Body GSC Perfect Body White Peeling</h3>
+            <p>4 đánh giá ⭐ 4</p>
+            <p class="price">1.200.000₫</p>
+            <div class="buttons">
+                <button class="buy-now">Mua ngay</button>
+                <button class="add-to-cart" onclick="addToCart('Xịt Toner Cân Bằng Da GSC', 600000, 'ảnh/1.jpg')">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+        <div id="cart" class="cart-container">
+            <div class="cart-header">
+                <span>Giỏ hàng của bạn</span>
+                <button onclick="toggleCart()">❌</button>
+            </div>
+            <ul id="cart-items" class="cart-items"></ul>
+            <div class="cart-footer">
+                <p>Tổng tiền: <span id="total-price">0</span>₫</p>
+                <button onclick="checkout()">Thanh toán</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>TU+</h3>
+                    <p>Giấy chứng nhận đăng ký doanh nghiệp số: 0110380805 do Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp ngày 09 tháng 06 năm 2023</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/manh.tu.186077"><img src="ảnh/facebook.png" alt="Facebook"></a>
+                        <a href="tiktok.com"><img src="ảnh/tiktok.png" alt="tiktok"></a>
+                        <a href="https://www.instagram.com/?hl=en"><img src="ảnh/ig iocn.jpg" alt="instargram"></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Thông Tin</h3>
+                    <a href="#">Chính sách giao, nhận và kiểm hàng</a><br>
+                    <a href="#">Chính sách đổi trả</a><br>
+                    <a href="#">Chính sách bảo mật thông tin</a><br>
+                    <a href="#">Chính sách thanh toán</a><br>
+                    <a href="#">Liên hệ</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Liên hệ</h3>
+                    <p><strong>SĐT:</strong> 0123456789</p>
+                    <p><strong>Email:</strong> lanhtutoicao@gmail.com</p>
+                    <p>Miền Bắc: Tầng 10, Tòa VIWASEEN TOWER, 48 Tố Hữu, Quận Nam Từ Liêm, TP Hà Nội.</p>
+                    <p>Miền Nam: 259/1B - 1C Nguyễn Tri Phương, Phường 5, Quận 10, TP HCM.</p>
+                </div>
+            </div>
+            Copyright &copy; 2025 Cosette. All Rights Reserved. by tú
+        </div>
+    </footer>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+</body>
+</html>
