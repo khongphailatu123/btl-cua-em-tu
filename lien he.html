@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="san pham.css">
+    <script defer src="trang chu.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <style>
+        .body {
+            font-family: Arial, sans-serif;
+        }
+        .contact-container {
+            max-width: 1100px;
+            margin: 50px auto;
+        }
+        .contact-title {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .contact-info h4 {
+            font-weight: bold;
+        }
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+        .contact-info i {
+            color: #007bff;
+            margin-right: 8px;
+        }
+        .form-control {
+            margin-bottom: 15px;
+        }
+        .btn-submit {
+            background-color: #28a745;
+            color: white;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <p>Bạn đã sở hữu sản phẩm của Tú shop chưa? <strong>ƯU ĐÃI ĐỘC QUYỀN - DUY NHẤT TRÊN WEB</strong></p>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-primary" href="./trang chủ.html">Tú <span class="text-dark">Shop</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="trang chủ.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sản phẩm.html">Sản phẩm</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/blog  yeu da.html">Blog Yêu Da</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/congdong.html">Cộng Đồng Celebeauty</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ctv.html">Trở thành CTV</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex me-3">
+                        <input class="form-control me-2" type="search" placeholder="Tìm kiếm..." aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit"><i class="bi bi-search"></i></button>
+                    </form>
+                    <div class="d-flex align-items-center">
+                        <div class="dropdown me-3">
+                            <a class="btn btn-outline-dark dropdown-toggle" href="#" role="button" id="userMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-circle"></i> Tài khoản
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="userMenu">
+                                <li><a class="dropdown-item" href="./dang nhap dang ky/dangnhap.html">Đăng nhập</a></li>
+                                <li><a class="dropdown-item" href="./dang nhap dang ky/dangky.html">Đăng ký</a></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn btn-primary position-relative" onclick="toggleCart()">
+                            <i class="bi bi-cart-fill"></i> Giỏ hàng
+                            <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>  
+</header>
+<div class="container policy-container">
+    <div class="container contact-container">
+        <h2 class="contact-title">Liên hệ</h2>
+        <div class="row">
+            <!-- Thông tin liên hệ -->
+            <div class="col-md-6 contact-info">
+                <h4>Công Ty Cổ Phần Đầu Tư Thương Mại Quốc Tế GSC Group</h4>
+                <p><i class="bi bi-geo-alt-fill"></i> <strong>Địa chỉ:</strong></p>
+                <ul>
+                    <li>Miền Bắc: Tầng 10, Tòa VIWASEEN TOWER, 48 Tố Hữu, Quận Nam Từ Liêm, TP Hà Nội.</li>
+                    <li>Miền Nam: 259/1B – 1C Nguyễn Tri Phương, Phường 5, Quận 10, TP. HCM</li>
+                </ul>
+                <p><i class="bi bi-telephone"></i> <strong>Hotline:</strong> 0936372114</p>
+                <p><i class="bi bi-envelope"></i> <strong>Email:</strong> gscosmetic.com@gmail.com</p>
+                <p><i class="bi bi-facebook"></i> <strong>Fanpage:</strong> <a href="https://www.facebook.com/GSCVietnamOfficial" target="_blank">Facebook GSC Vietnam</a></p>
+            </div>
+
+            <!-- Form liên hệ -->
+            <div class="col-md-6">
+                <h4>GỬI THÔNG TIN CHO CHÚNG TÔI</h4>
+                <p>Quý khách vui lòng điền thông tin vào mẫu bên dưới và gửi những góp ý, thắc mắc cho chúng tôi. Chúng tôi sẽ phản hồi email của quý khách trong thời gian sớm nhất.</p>
+                <form>
+                    <input type="text" class="form-control" placeholder="Tên của bạn" required>
+                    <input type="text" class="form-control" placeholder="Số điện thoại" required>
+                    <input type="email" class="form-control" placeholder="Địa chỉ email" required>
+                    <textarea class="form-control" rows="4" placeholder="Nhập câu hỏi của bạn ở đây" required></textarea>
+                    <button type="submit" class="btn btn-submit">Gửi thông tin</button>
+                </form>
+            </div>
+        </div>
+    </div>
+/</div>    
+<footer class="footer">
+    <div class="footer-bottom">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>TU+</h3>
+                <p>Giấy chứng nhận đăng ký doanh nghiệp số: 0110380805 do Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp ngày 09 tháng 06 năm 2023</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/manh.tu.186077"><img src="ảnh/facebook.png" alt="Facebook"></a>
+                    <a href="tiktok.com"><img src="ảnh/tiktok.png" alt="tiktok"></a>
+                    <a href="https://www.instagram.com/?hl=en"><img src="ảnh/ig iocn.jpg" alt="instargram"></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Thông Tin</h3>
+                <a href="chinh sach nhan hang va kiem hang.html">Chính sách giao, nhận và kiểm hàng</a><br>
+                <a href="/chinh sach doi tra.html">Chính sách đổi trả</a><br>
+                <a href="chinh sach bao mat thong tin.html">Chính sách bảo mật thông tin</a><br>
+                <a href="chinh sach thanh toan.html">Chính sách thanh toán</a><br>
+                <a href="lien he.html">Liên hệ</a>
+            </div>
+            <div class="footer-section">
+                <h3>Liên hệ</h3>
+                <p><strong>SĐT:</strong> 0123456789</p>
+                <p><strong>Email:</strong> lanhtutoicao@gmail.com</p>
+                <p>Miền Bắc: Tầng 10, Tòa VIWASEEN TOWER, 48 Tố Hữu, Quận Nam Từ Liêm, TP Hà Nội.</p>
+                <p>Miền Nam: 259/1B - 1C Nguyễn Tri Phương, Phường 5, Quận 10, TP HCM.</p>
+            </div>
+        </div>
+        Copyright &copy; 2025 Cosette. All Rights Reserved. by tú
+    </div>
+</footer>
+</body>
+</html>

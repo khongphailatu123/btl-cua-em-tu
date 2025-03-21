@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./giohang.css">
+    <script defer src="./giohang.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-primary" href="trang chủ.html">Tú <span class="text-dark">Shop</span></a>
+                <a href="trang chủ.html" class="btn btn-outline-primary">Quay lại mua sắm</a>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="container mt-5">
+        <h2 class="text-center">Giỏ hàng của bạn</h2>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Hình ảnh</th>
+                        <th>Sản phẩm</th>
+                        <th>Giá</th>
+                        <th>Số lượng</th>
+                        <th>Tổng</th>
+                        <th>Hành động</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <tr>
+                        <td><img src="ảnh/1.jpg" alt="Toner Cân Bằng Da" width="50"></td>
+                        <td>Xịt Toner Cân Bằng Da GSC</td>
+                        <td>600.000₫</td>
+                        <td>1</td>
+                        <td>600.000₫</td>
+                        <td><button class="btn btn-danger" onclick="removeItem(this)">Xóa</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="cart-footer text-center mt-4">
+            <h4>Tổng tiền: <span id="total-price">600.000</span>₫</h4>
+            <button class="btn btn-success" onclick="checkout()">Thanh toán</button>
+        </div>
+    </section>
+    <script src="gio hang.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+</body>
+</html>
